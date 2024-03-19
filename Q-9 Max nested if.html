@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Enter 1st No:"));
+        let n2 = parseFloat(prompt("Enter 2nd No.:"));
+        let n3 = parseFloat(prompt("Enter 3rd No.:"));
+        let n4 = parseFloat(prompt("Enter 4th No.:"));
+
+        let maxN;
+        if(n1 >= n2){
+            if(n1 >= n3){
+                if(n1 >= n4){
+                    maxN =n1;
+                }
+                else{
+                    maxN = n4;
+                
+                }
+            }
+            else{
+                if(n3>= n4){
+                    maxN = n3;
+                }else{
+                    maxN = n4;
+                }
+            }
+        }
+        else{
+            if(n2>=n3){
+                if(n2>=n4){
+                    maxN = n2;
+                }else{
+                    maxN= n4;
+                }
+            }
+            else{
+                if(n3 >= n4){
+                    maxN= n3;
+                }
+                else{
+                    maxN = n4;
+                }
+            }
+        }
+        console.log("max Number: ",maxN);
+    </script>
+</body>
+
+</html>
